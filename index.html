@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Genesis Bartending — Private & Event Bartending in El Paso</title>
+<meta name="description" content="Handcrafted cocktails and private event bartending in El Paso. Weddings, private parties, corporate events, and mobile bar service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --char:#14110d; --char-2:#1e1912; --ivory:#f3ead9; --ivory-dim:#cabfa9;
+    --wine:#7c1f2b; --wine-lt:#a53341; --brass:#c8a35c; --brass-lt:#e0c286;
+    --line:rgba(200,163,92,.28);
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%; overflow-x:hidden; scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--char); color:var(--ivory);
+    font-family:"Source Sans 3",-apple-system,system-ui,sans-serif;
+    font-size:17px; line-height:1.6; width:100%; max-width:100%;
+    overflow-x:hidden; overflow-wrap:break-word;
+  }
+  h1,h2,h3,p,li,.eyebrow,blockquote{overflow-wrap:break-word;}
+  .serif{font-family:"Fraunces",Georgia,serif;}
+  a{color:var(--brass-lt); text-decoration:none;}
+  .eyebrow{
+    font-size:13px; letter-spacing:4px; text-transform:uppercase;
+    color:var(--brass); margin:0 0 16px; font-weight:600;
+  }
+  .btn{
+    display:inline-block; font-weight:600; letter-spacing:.5px;
+    padding:15px 34px; border-radius:2px; font-size:16px;
+    background:var(--brass); color:#1a140a; border:1px solid var(--brass);
+    transition:background .2s,transform .2s;
+  }
+  .btn:hover{background:var(--brass-lt);}
+  .btn.outline{background:transparent; color:var(--brass-lt); border:1px solid var(--brass);}
+  .btn.outline:hover{background:rgba(200,163,92,.12);}
+  .wrap{max-width:1060px; margin:0 auto; padding:0 24px;}
+
+  /* HERO */
+  header.hero{
+    position:relative; min-height:92vh; display:flex; align-items:center;
+    background:
+      radial-gradient(120% 80% at 78% 8%, rgba(124,31,43,.55) 0%, rgba(20,17,13,0) 55%),
+      radial-gradient(90% 70% at 10% 100%, rgba(200,163,92,.14) 0%, rgba(20,17,13,0) 60%),
+      linear-gradient(180deg,#100d0a 0%, #1a1510 100%);
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  header.hero::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:3px 3px; mix-blend-mode:overlay;
+  }
+  .hero-inner{position:relative; z-index:2; padding:120px 0 90px;}
+  .hero .brandmark{
+    display:flex; align-items:center; gap:14px; margin-bottom:44px;
+  }
+  .hero .brandmark .g{
+    font-family:"Fraunces",serif; font-weight:900; font-size:30px; color:var(--brass);
+    border:2px solid var(--brass); width:52px; height:52px; border-radius:50%;
+    display:grid; place-items:center; line-height:1;
+  }
+  .hero .brandmark span{letter-spacing:3px; font-size:13px; text-transform:uppercase; color:var(--ivory-dim);}
+  h1.title{
+    font-family:"Fraunces",serif; font-weight:900; line-height:.98;
+    font-size:clamp(46px,11vw,104px); margin:0 0 8px; letter-spacing:-1px;
+    color:var(--ivory);
+  }
+  h1.title em{font-style:italic; font-weight:400; color:var(--brass-lt); display:block;}
+  .hero .lede{
+    font-size:clamp(18px,2.6vw,23px); max-width:560px; margin:26px 0 38px;
+    color:var(--ivory-dim);
+  }
+  .hero .cta-row{display:flex; flex-wrap:wrap; gap:14px;}
+
+  /* SECTIONS */
+  section{padding:88px 0; border-bottom:1px solid rgba(200,163,92,.14);}
+  h2.head{
+    font-family:"Fraunces",serif; font-weight:600;
+    font-size:clamp(30px,5.5vw,50px); line-height:1.05; margin:6px 0 26px; color:var(--ivory);
+  }
+  .two{display:grid; grid-template-columns:1fr; gap:44px; align-items:center;}
+  @media(min-width:820px){.two{grid-template-columns:1.05fr .95fr; gap:64px;}}
+  blockquote{
+    font-family:"Fraunces",serif; font-style:italic; font-weight:400;
+    font-size:clamp(22px,3.4vw,30px); line-height:1.4; color:var(--ivory);
+    margin:0; padding-left:24px; border-left:3px solid var(--wine-lt);
+  }
+  .story p{color:var(--ivory-dim); font-size:18px;}
+
+  /* SERVICES */
+  .services{background:var(--char-2);}
+  .svc-grid{display:grid; grid-template-columns:1fr; gap:2px; background:var(--line); border:1px solid var(--line); margin-top:14px;}
+  @media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:960px){.svc-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .svc{background:var(--char-2); padding:30px 26px; transition:background .2s;}
+  .svc:hover{background:#251d15;}
+  .svc .n{font-family:"Fraunces",serif; color:var(--brass); font-size:15px; letter-spacing:2px;}
+  .svc h3{font-family:"Fraunces",serif; font-weight:600; font-size:22px; margin:10px 0 8px; color:var(--ivory);}
+  .svc p{margin:0; color:var(--ivory-dim); font-size:15.5px;}
+
+  /* MENU TEASER */
+  .menu-list{margin-top:20px; border-top:1px solid var(--line);}
+  .drink{
+    display:flex; justify-content:space-between; align-items:baseline; gap:18px;
+    padding:22px 0; border-bottom:1px solid var(--line);
+  }
+  .drink .d-name{font-family:"Fraunces",serif; font-size:clamp(20px,3vw,26px); color:var(--ivory);}
+  .drink .d-desc{color:var(--ivory-dim); font-size:15px; flex:1; text-align:right; font-style:italic;}
+  .menu-note{color:var(--ivory-dim); font-style:italic; margin-top:18px; font-size:15px;}
+
+  /* GALLERY */
+  .gallery{background:var(--char-2);}
+  .gal-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:16px;}
+  @media(min-width:760px){.gal-grid{grid-template-columns:repeat(4,1fr);}}
+  .tile{
+    position:relative; aspect-ratio:3/4; border:1px solid var(--line);
+    background:linear-gradient(150deg,#241c14,#161009);
+    display:grid; place-items:center; overflow:hidden;
+  }
+  .tile.tall{aspect-ratio:3/4;}
+  @media(min-width:760px){
+    .tile:nth-child(1){grid-row:span 2; aspect-ratio:3/5;}
+    .tile:nth-child(4){grid-row:span 2; aspect-ratio:3/5;}
+  }
+  .tile span{color:rgba(200,163,92,.5); font-size:12px; letter-spacing:2px; text-transform:uppercase; text-align:center; padding:0 10px;}
+  .tile::before{content:"✶"; position:absolute; top:12px; left:12px; color:rgba(200,163,92,.35); font-size:14px;}
+
+  /* CONTACT */
+  .contact{background:linear-gradient(180deg,#1a1510,#100d0a);}
+  form{margin-top:22px; display:grid; gap:16px; max-width:640px;}
+  .row2{display:grid; grid-template-columns:1fr; gap:16px;}
+  @media(min-width:560px){.row2{grid-template-columns:1fr 1fr;}}
+  label{display:block; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:var(--brass); margin-bottom:7px;}
+  input,select,textarea{
+    width:100%; background:#0f0b07; border:1px solid var(--line); color:var(--ivory);
+    padding:13px 14px; border-radius:2px; font-family:inherit; font-size:16px;
+  }
+  input:focus,select:focus,textarea:focus{outline:none; border-color:var(--brass); box-shadow:0 0 0 2px rgba(200,163,92,.18);}
+  textarea{min-height:120px; resize:vertical;}
+  .form-note{font-size:13px; color:var(--ivory-dim); font-style:italic;}
+  .contact-alt{margin-top:26px; color:var(--ivory-dim);}
+  .contact-alt a{font-weight:600;}
+
+  /* FOOTER */
+  footer{background:#0d0a07; padding:46px 0; text-align:center; color:var(--ivory-dim);}
+  footer .fg{font-family:"Fraunces",serif; color:var(--brass); font-size:22px; font-weight:900; letter-spacing:.5px;}
+  footer .small{font-size:13px; margin-top:8px; letter-spacing:.5px;}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;} *{transition:none!important;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="brandmark">
+      <div class="g serif">G</div>
+      <span>Genesis Bartending &middot; El Paso</span>
+    </div>
+    <h1 class="title serif">Great cocktails,<em>unforgettable nights.</em></h1>
+    <p class="lede">Private and event bartending in El Paso. Handcrafted drinks, effortless hosting, and the kind of evening your guests talk about long after last call.</p>
+    <div class="cta-row">
+      <a class="btn" href="#contact">Check your date</a>
+      <a class="btn outline" href="https://www.instagram.com/geeenneeesis/" target="_blank" rel="noopener">See the work on Instagram</a>
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">The pour behind the party</p>
+      <blockquote>"Any party without great cocktails isn't really a party. We create memories with handcrafted drinks that never disappoint, and experiences your guests won't forget."</blockquote>
+    </div>
+    <div class="story">
+      <p>Genesis has spent years being part of life's best moments, one perfectly built drink at a time. From intimate backyard gatherings to full weddings, the mission is simple: take the bar off your plate so you can actually enjoy your own event.</p>
+      <p>Every menu is tailored to you, every drink is made by hand, and every detail, from the glassware to the garnish, is handled with care.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="head serif">Full-service bartending, built around your event.</h2>
+    <div class="svc-grid">
+      <div class="svc"><div class="n serif">01</div><h3>Private Parties</h3><p>Birthdays, anniversaries, backyard get-togethers, and every reason to celebrate in between.</p></div>
+      <div class="svc"><div class="n serif">02</div><h3>Weddings</h3><p>Signature couples' cocktails and a bar experience your guests remember as fondly as the vows.</p></div>
+      <div class="svc"><div class="n serif">03</div><h3>Corporate & Holiday</h3><p>Polished, professional service for office parties, launches, and end-of-year celebrations.</p></div>
+      <div class="svc"><div class="n serif">04</div><h3>Cocktail Catering</h3><p>Curated drink menus with premium ingredients, scaled to any guest count.</p></div>
+      <div class="svc"><div class="n serif">05</div><h3>Mobile Bar Setup</h3><p>A complete, ready-to-pour bar brought to your venue, indoors or out.</p></div>
+      <div class="svc"><div class="n serif">06</div><h3>Custom Drink Menus</h3><p>Bespoke cocktails designed around your theme, palate, and the story of your event.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="wrap">
+    <p class="eyebrow">A taste of the craft</p>
+    <h2 class="head serif">Signature pours, made to your night.</h2>
+    <div class="menu-list">
+      <div class="drink"><span class="d-name serif">Borderland Paloma</span><span class="d-desc">tequila, grapefruit, lime, chili salt</span></div>
+      <div class="drink"><span class="d-name serif">Velvet Sun Old Fashioned</span><span class="d-desc">bourbon, smoked demerara, orange</span></div>
+      <div class="drink"><span class="d-name serif">Midnight in Bloom</span><span class="d-desc">gin, elderflower, hibiscus, sparkling</span></div>
+      <div class="drink"><span class="d-name serif">The Genesis Spritz</span><span class="d-desc">a house original, built for your event</span></div>
+    </div>
+    <p class="menu-note">Sample menu, fully customizable. Tell us the vibe and we'll design the drinks around it.</p>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <p class="eyebrow">The experience</p>
+    <h2 class="head serif">A look behind the bar.</h2>
+    <div class="gal-grid">
+      <div class="tile"><span>Your photo here</span></div>
+      <div class="tile"><span>Your photo here</span></div>
+      <div class="tile"><span>Your photo here</span></div>
+      <div class="tile"><span>Your photo here</span></div>
+      <div class="tile"><span>Your photo here</span></div>
+      <div class="tile"><span>Your photo here</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Let's talk</p>
+    <h2 class="head serif">Check your date.</h2>
+    <p style="color:var(--ivory-dim); max-width:600px;">Tell us a little about your event and we'll get back to you with availability and a custom quote.</p>
+    <form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+      <div class="row2">
+        <div><label for="name">Name</label><input id="name" name="name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      </div>
+      <div class="row2">
+        <div><label for="date">Event date</label><input id="date" name="event_date" type="date"></div>
+        <div><label for="type">Event type</label>
+          <select id="type" name="event_type">
+            <option>Private party</option><option>Wedding</option><option>Corporate / Holiday</option>
+            <option>Cocktail catering</option><option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div><label for="guests">Approx. guest count</label><input id="guests" name="guests" inputmode="numeric" placeholder="e.g. 40"></div>
+      <div><label for="msg">Tell us about your event</label><textarea id="msg" name="message" placeholder="The vibe, the venue, anything you're dreaming up..."></textarea></div>
+      <button class="btn" type="submit">Send inquiry</button>
+      <p class="form-note">Placeholder form, connect to a real inbox before launch.</p>
+    </form>
+    <p class="contact-alt">Prefer to reach out directly? Email <a href="mailto:hello@genesisbartending.com">hello@genesisbartending.com</a> or DM <a href="https://www.instagram.com/geeenneeesis/" target="_blank" rel="noopener">@geeenneeesis</a> on Instagram.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg serif">Genesis Bartending</div>
+    <div class="small">Private &amp; event bartending &middot; Serving El Paso &amp; the borderland</div>
+    <div class="small"><a href="https://www.instagram.com/geeenneeesis/" target="_blank" rel="noopener">@geeenneeesis</a> &middot; hello@genesisbartending.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
